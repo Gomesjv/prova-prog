@@ -1,0 +1,28 @@
+    <script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+
+    //PROBLEMA: Taxa de Juros
+    //Peça para o usuário informar o valor do veículo que deseja comprar. Peça também para ele informar a quantidade de parcelas que deseja financiar.
+    //Considere que:
+    //Se a quantidade de parcelas for até 12 (inclusive), o juro a ser aplicado será de 5% sob o valor do veículo.
+    //Se a quantidade de parcelas for até 24 (inclusive), o juro a ser aplicado será de 10% sob o valor do veículo.
+    //Se a quantidade de parcelas for acima de 24, o juro a ser aplicado será de 20% sob o valor do veículo.
+    //Apresente o valor final do veículo, considerando o juro estabelecido para a quantidade de parcelas.
+
+    //ENTRADA
+    const carro = prompt("qual carro o valor do veículo que ira comprar :");
+    const parcelas = parseInt(prompt("quantas vezes ira parcelar :"));
+    let conceito;
+
+    //PROCESSAMENTO
+    parcelas <= 12
+        ? (conceito = 1.05)
+        : parcelas <= 24
+        ? (conceito = 1.1)
+        : (conceito = 1.2);
+
+    const valorFinal = carro * conceito;
+    //SAÍDA
+
+    alert(`seu carro ira custar R$${valorFinal}`);
+    </script>
